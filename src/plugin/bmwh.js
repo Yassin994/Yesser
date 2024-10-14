@@ -12,7 +12,7 @@ const alive = async (m, Matrix) => {
   const cmd = m.body.startsWith(prefix) ? m.body.slice(prefix.length).toLowerCase() : '';
     if (['alive', 'uptime', 'runtime'].includes(cmd)) {
 
-  const uptimeMessage = `*BMW MD IS ACTIVE*
+  const uptimeMessage = `*YESSER XXL_MD IS ACTIVE*
 
 ╭─────═━┈┈━═──━┈⊷
 ┇ *${days} Day*
@@ -44,7 +44,7 @@ const alive = async (m, Matrix) => {
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "© Ibrahim Adams"
+            text: "© yessertech"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
@@ -60,8 +60,8 @@ const alive = async (m, Matrix) => {
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '254710772666',
-                  newsletterName: "BMW MD",
+                  newsletterJid: '255621995482',
+                  newsletterName: "YESSER MD",
                   serverMessageId: 143
                 }
               }
