@@ -18,7 +18,7 @@ const alive = async (m, Matrix) => {
 ┇ ᴅᴇᴠ: *sɪʀ ɪʙʀᴀʜɪᴍ*
 ╰─────═━┈┈━═──━┈⊷ 
 
-> *BMW MD COMMAND LIST*
+> *YESSER XXL COMMAND LIST*
 
  *This commands will guide*
  *you how to use me*
@@ -135,7 +135,7 @@ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
-©𝑰𝒃𝒓𝒂𝒉𝒊𝒎 𝑨𝒅𝒂𝒎𝒔 𝑷𝒓𝒐𝒋𝒆𝒄𝒕
+©yessertech🤠
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
 ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
@@ -146,7 +146,7 @@ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
       {
         "name": "quick_reply",
         "buttonParamsJson": JSON.stringify({
-          display_text: "🧔 OWNER",
+          display_text: "🖐️🤠 OWNER",
           id: `${prefix}owner`
         })
       }
@@ -164,7 +164,7 @@ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
             text: uptimeMessage
           }),
           footer: proto.Message.InteractiveMessage.Footer.create({
-            text: "© Ibrahim Adams"
+            text: "© yessertech"
           }),
           header: proto.Message.InteractiveMessage.Header.create({
             title: "",
