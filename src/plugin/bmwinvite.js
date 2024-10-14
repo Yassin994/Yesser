@@ -10,7 +10,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
     if (!validCommands.includes(cmd)) return;
     
-    if (!m.isGroup) return m.reply("*🚫 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
+    if (!m.isGroup) return m.reply("*🤔 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
 
     const text = m.body.slice(prefix.length + cmd.length).trim();
     
@@ -18,12 +18,12 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
     const isBotAdmins = groupMetadata.participants.find(p => p.id === botNumber)?.admin;
 
     if (!isBotAdmins) {
-      return m.reply('*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND.*');
+      return m.reply('*😊 BOT MUST BE AN ADMIN TO USE THIS COMMAND.*');
     }
 
-    if (!text) return m.reply(`*📛 ENTER THE NUMBER YOU WANT TO INVITE TO THE GROUP*\n\nExample:\n*${prefix + cmd}* 254xxxxxxx`);
-    if (text.includes('+')) return m.reply(`*📛 ENTER THE NUMBER TOGETHER WITHOUT *+*`);
-    if (isNaN(text)) return m.reply(`*📛 ENTER ONLY THE NUMBERS PLUS YOUR COUNTRY CODE WITHOUT SPACES`);
+    if (!text) return m.reply(`*😉 ENTER THE NUMBER YOU WANT TO INVITE TO THE GROUP*\n\nExample:\n*${prefix + cmd}* 255xxxxxxx`);
+    if (text.includes('+')) return m.reply(`*😁 ENTER THE NUMBER TOGETHER WITHOUT *+*`);
+    if (isNaN(text)) return m.reply(`*😂 ENTER ONLY THE NUMBERS PLUS YOUR COUNTRY CODE WITHOUT SPACES`);
 
     const group = m.from;
     const groupMetadata = await gss.groupMetadata(group);
