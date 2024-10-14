@@ -60,7 +60,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
       await gss.sendImageAsSticker(m.from, buffer, m, {
         packname: "",
-        author: "> BMW-MD"
+        author: "> yessertech"
       });
     } catch (error) {
       console.error('Error during HTTP request:', error);
