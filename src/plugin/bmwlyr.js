@@ -46,7 +46,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
             name: "cta_url",
             buttonParamsJson: JSON.stringify({
               display_text: "Follow Wachannel🌍",
-              url: `https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y`
+              url: `https://whatsapp.com/channel/0029VakA1mu35fM18opH1s30`
             })
           },
           {
@@ -70,7 +70,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
                   text: lyrics
                 }),
                 footer: proto.Message.InteractiveMessage.Footer.create({
-                  text: "> *© Ibrahim Adams*"
+                  text: "> *© yessertech*"
                 }),
                 header: proto.Message.InteractiveMessage.Header.create({
                   title: "",
