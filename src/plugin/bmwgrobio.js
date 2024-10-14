@@ -11,16 +11,16 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
 
     if (!validCommands.includes(cmd)) return;
 
-    if (!m.isGroup) return m.reply("*📛 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
+    if (!m.isGroup) return m.reply("*🤔 THIS COMMAND CAN ONLY BE USED IN GROUPS*");
     const groupMetadata = await gss.groupMetadata(m.from);
     const participants = groupMetadata.participants;
     const botAdmin = participants.find(p => p.id === botNumber)?.admin;
     const senderAdmin = participants.find(p => p.id === m.sender)?.admin;
 
-    if (!botAdmin) return m.reply("*📛 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
-    if (!senderAdmin) return m.reply("*📛 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
+    if (!botAdmin) return m.reply("*😊 BOT MUST BE AN ADMIN TO USE THIS COMMAND*");
+    if (!senderAdmin) return m.reply("*🙃 YOU MUST BE AN ADMIN TO USE THIS COMMAND*");
 
-    if (!text) return m.reply("*📛 PLEASE PROVIDE A DESCRIPTION TO SET*");
+    if (!text) return m.reply("*😃 PLEASE PROVIDE A DESCRIPTION TO SET*");
 
     await gss.groupUpdateDescription(m.from, text);
     m.reply(`Group Description Has Been Set To: ${text}`);
