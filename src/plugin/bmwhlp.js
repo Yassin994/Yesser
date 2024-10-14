@@ -10,7 +10,7 @@ const searchRepo = async (m, Matrix) => {
   const validCommands = ['menu', 'help', 'list'];
 
   if (validCommands.includes(cmd)) {
-    const repoUrl = `https://api.github.com/repos/devibraah/BWM-XMD`;
+    const repoUrl = `https://api.github.com/repos/Yassin994/yesser`;
     
     await handleRepoCommand(m, Matrix, repoUrl);
   }
@@ -54,12 +54,12 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
               text: messageText,
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: '🌏𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓🌏\n\n𝐌𝐀𝐃𝐄 𝐁𝐘 𝐈𝐁𝐑𝐀𝐇𝐈𝐌 𝐀𝐃𝐀𝐌𝐒',
+              text: '🤠𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓🤠\n\nROLE BY YESSER TECH',
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({
                 image: {
-                  url: 'https://telegra.ph/file/0c225f7da5616cdcbec80.jpg',
+                  url: 'https://i.imgur.com/ExqNrFC.jpeg',
                 },
               }, { upload: Matrix.waUploadToServer })),
               title: '',
@@ -94,14 +94,14 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: "Bmw Repo",
-                    url: 'https://github.com/devibraah/BWM-XMD',
+                    url: 'https://github.com/yassin994/yesser',
                   }),
                 },
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: "Follow Wachannel",
-                    url: 'https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y',
+                    url: 'https://whatsapp.com/channel/0029VakA1mu35fM18opH1s30',
                   }),
                 },
               ],
@@ -119,11 +119,11 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
     await Matrix.relayMessage(repoMessage.key.remoteJid, repoMessage.message, {
       messageId: repoMessage.key.id,
     });
-    await m.React('🚘');
+    await m.React('🤠');
   } catch (error) {
     console.error('Error processing your request:', error);
     m.reply('Error processing your request.');
-    await m.React('🚘');
+    await m.React('🤠');
   }
 };
 
