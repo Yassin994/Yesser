@@ -76,10 +76,10 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
             },
             interactiveMessage: proto.Message.InteractiveMessage.create({
               body: proto.Message.InteractiveMessage.Body.create({
-                text: `Bmw TikTok Download\n\nTitle: ${currentResult.data.title}\nAuthor: ${currentResult.data.author.nickname}\nViews: ${currentResult.data.view}\nDuration: ${currentResult.data.duration}s\n`
+                text: `YESSER TikTok Download\n\nTitle: ${currentResult.data.title}\nAuthor: ${currentResult.data.author.nickname}\nViews: ${currentResult.data.view}\nDuration: ${currentResult.data.duration}s\n`
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "© Ibrahim Adams"
+                text: "© yessertech"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                  ...(await prepareWAMessageMedia({ image: { url: `` } }, { upload: Matrix.waUploadToServer })),
@@ -139,7 +139,7 @@ const text = m.body.slice(prefix.length + cmd.length).trim();
           if (type === 'video' && fileSizeInMB <= 300) {
             content = { video: finalMediaBuffer, mimetype: 'video/mp4', caption: '> © Ibrahim Adams' };
           } else if (type === 'audio' && fileSizeInMB <= 300) {
-            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> © Ibrahim Adams' };
+            content = { audio: finalMediaBuffer, mimetype: 'audio/mpeg', caption: '> © yessertech' };
           }
 
           await Matrix.sendMessage(m.from, content, { quoted: m });
