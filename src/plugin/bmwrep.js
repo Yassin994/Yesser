@@ -10,7 +10,7 @@ const searchRepo = async (m, Matrix) => {
   const validCommands = ['repo', 'sc', 'script'];
 
   if (validCommands.includes(cmd)) {
-    const repoUrl = `https://api.github.com/repos/devibraah/BWM-XMD`;
+    const repoUrl = `https://api.github.com/repos/Yassin994/yesser`;
     
     await handleRepoCommand(m, Matrix, repoUrl);
   }
@@ -31,13 +31,13 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
       owner,
     } = repoData;
 
-    const messageText = `*_BMW MD GITHUB INFORMATION:_*\n
+    const messageText = `*_YESSER MD GITHUB INFORMATION:_*\n
 *_Name:_* ${name}
 *_Stars:_* ${stargazers_count}
 *_Forks:_* ${forks_count}
 *_Created At:_* ${new Date(created_at).toLocaleDateString()}
 *_Last Updated:_* ${new Date(updated_at).toLocaleDateString()}
-*_Owner:_* *_Ibrahim Adams_*
+*_Owner:_* *_yessertech_*
     `;
 
     const repoMessage = generateWAMessageFromContent(m.from, {
@@ -52,12 +52,12 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
               text: messageText,
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: '*© Ibrahim Adams*',
+              text: '*© yessertech*',
             }),
             header: proto.Message.InteractiveMessage.Header.create({
               ...(await prepareWAMessageMedia({
                 image: {
-                  url: 'https://telegra.ph/file/0c225f7da5616cdcbec80.jpg',
+                  url: 'https://i.imgur.com/ExqNrFC.jpeg',
                 },
               }, { upload: Matrix.waUploadToServer })),
               title: '',
@@ -71,21 +71,21 @@ const handleRepoCommand = async (m, Matrix, repoUrl) => {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: 'Contact Owner',
-                    url: 'https://wa.me/+254710772666?text=Hey_Mr_Ibrahim_Adams',
+                    url: 'https://wa.me/255621995482?text=Hey_Mr_yesser',
                   }),
                 },
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: 'Click Here To Fork',
-                    url: 'https://github.com/devibraah/BWM-XMD/fork',
+                    url: 'https://github.com/Yassin994/yesser/fork',
                   }),
                 },
                 {
                   name: 'cta_url',
                   buttonParamsJson: JSON.stringify({
                     display_text: 'Join Our Community',
-                    url: 'https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y',
+                    url: 'https://whatsapp.com/channel/0029VakA1mu35fM18opH1s30',
                   }),
                 },
               ],
