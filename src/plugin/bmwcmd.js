@@ -13,9 +13,9 @@ const alive = async (m, Matrix) => {
     if (['command', 'comman', 'commands'].includes(cmd)) {
 
   const uptimeMessage = `╭─────═━┈┈━═──━┈⊷
-┇ ʙᴏᴛ ɴᴀᴍᴇ: *ʙᴍᴡ ᴍᴅ*
+┇ ʙᴏᴛ ɴᴀᴍᴇ: *YESSER MD*
 ┇ ᴠᴇʀꜱɪᴏɴ: *7.1.0*     
-┇ ᴅᴇᴠ: *sɪʀ ɪʙʀᴀʜɪᴍ*
+┇ ᴅᴇᴠ: *yesser tech*
 ╰─────═━┈┈━═──━┈⊷ 
 
 > *YESSER XXL COMMAND LIST*
@@ -180,8 +180,8 @@ ${prefix}𝙶𝚒𝚝𝚑𝚞𝚋𝚂𝚝𝚊𝚕𝚔
                   forwardingScore: 999,
                   isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                  newsletterJid: '254710772666',
-                  newsletterName: "BMW MD",
+                  newsletterJid: '255621995482',
+                  newsletterName: "YESSER_MD",
                   serverMessageId: 143
                 }
               }
